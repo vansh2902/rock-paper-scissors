@@ -2,17 +2,17 @@ import random
 
 print("Rock Paper Scissors Game!")
 
-item_list = ["ROCK", "PAPER", "SCISSOR,'Q'"]
+item_list = ["ROCK", "PAPER", "SCISSOR"]
 score = 0
 
-while True: 
+while True:
 
     user_choice = input("Enter your move: ").upper()
+    if user_choice == "Q":
+        break
     if user_choice not in item_list:
         print("Please choose ROCK, PAPER or SCISSOR")
         continue
-    if user_choice =="Q":
-        break
 
     comp_choice = random.choice(item_list)
 
@@ -21,7 +21,7 @@ while True:
     if user_choice == comp_choice:
         print("TIE!")
     elif (user_choice == "ROCK" and comp_choice == "SCISSOR") or \
-         (user_choice == "SCISSOR" and comp_choice =="PAPER") or \
+         (user_choice == "SCISSOR" and comp_choice == "PAPER") or \
          (user_choice == "PAPER" and comp_choice == "ROCK"):
          print("You Win!")
          score += 1
