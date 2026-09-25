@@ -1,21 +1,21 @@
-# Rock Paper Scissors Game
+# Rock Paper Scissors 🎮
 
-A simple Rock Paper Scissors game made using Python.
+Play Rock Paper Scissors against the computer in your terminal, with score
+tracking.
 
 ## Features
-
-- Rock, Paper and Scissor choices
-- Computer generates random choice
-- Score tracking
-- Invalid input handling
+- Random computer moves
+- Win/lose score tracking
+- Handles invalid input
 - Quit option
 
-## Concepts Used
+## How to run
+```bash
+python "rock,paper,scissors.py"
+```
+(The filename contains commas, so keep the quotes.)
 
-- Variables
-- Lists
-- While loop
-- If / elif / else
-- Functions from random module
-- User input
-- Conditional logic
+## Concepts used
+- Lists and random choice
+- `while` loop and conditionals
+- User input and string handling
